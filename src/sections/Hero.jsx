@@ -26,7 +26,7 @@ const Hero = () => {
         <p className="sm:text-3xl text-xl font-medium text-white text-center font-generalsans">
           Hi, I am Seif <span className="waving-hand">👋🏻</span>
         </p>
-        <p className="hero_tag text-gray_gradient">
+        <p className="hero_tag text-white opacity-[0.7]">
           React Front-End Developer
         </p>
       </div>

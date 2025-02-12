@@ -32,7 +32,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center py-5 mx-auto c-space">
           <a
             href="/"
-            className="text-white opacity-[0.9] font-bold text-xl hover:opacity-[1] transition-all"
+            className="text-white opacity-[0.7] font-bold text-xl hover:opacity-[1] transition-all"
           >
             Seif
           </a>

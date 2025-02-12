@@ -85,7 +85,13 @@ const About = () => {
                 I&apos;m based in Cairo, Egypt and open to remote work
                 worldwide.
               </p>
-              <Button name="Contact Me" isBeam containerClass="w-full mt-10" />
+              <a href="#contact">
+                <Button
+                  name="Contact Me"
+                  isBeam
+                  containerClass="w-full mt-10"
+                />
+              </a>
             </div>
           </div>
         </div>
@@ -124,7 +130,7 @@ const About = () => {
                   src={hasCopied ? "assets/tick.svg" : "assets/copy.svg"}
                   alt="copy"
                 />
-                <p className="lg:text-2xl md:text-xl font-medium text-gray_gradient text-white">
+                <p className="lg:text-2xl md:text-xl font-medium text-white opacity-[0.7]">
                   seifmostafaa49@gmail.com
                 </p>
               </div>
