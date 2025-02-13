@@ -21,41 +21,6 @@ export const navLinks = [
   },
 ];
 
-export const clientReviews = [
-  {
-    id: 1,
-    name: "Emily Johnson",
-    position: "Marketing Director at GreenLeaf",
-    img: "assets/review1.png",
-    review:
-      "Working with Adrian was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.",
-  },
-  {
-    id: 2,
-    name: "Mark Rogers",
-    position: "Founder of TechGear Shop",
-    img: "assets/review2.png",
-    review:
-      "Adrian’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional! Fantastic work.",
-  },
-  {
-    id: 3,
-    name: "John Dohsas",
-    position: "Project Manager at UrbanTech ",
-    img: "assets/review3.png",
-    review:
-      "I can’t say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.",
-  },
-  {
-    id: 4,
-    name: "Ether Smith",
-    position: "CEO of BrightStar Enterprises",
-    img: "assets/review4.png",
-    review:
-      "Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend backend dev are top-notch.",
-  },
-];
-
 export const myProjects = [
   {
     title: "Linkedin - Clone",
@@ -63,7 +28,9 @@ export const myProjects = [
     subdesc:
       "The React LinkedIn Clone leverages Redux for efficient state management and Firebase for backend services like authentication and real-time data storage, ensuring a smooth and scalable experience.",
     href: "https://linkedin-clone-59e13.web.app/",
-    texture: "/textures/project/linkedin-texture.mp4",
+    gitLink: "https://github.com/seifmostafa78/React-linkedin-clone",
+    texture: "/textures/project/linkedin-texture.png",
+    subTexture: "/textures/project/linkedin-texture2.png",
     logo: "/assets/linkedin.svg",
     logoStyle: {
       backgroundColor: "#60f5a1",
@@ -97,7 +64,9 @@ export const myProjects = [
     subdesc:
       "React E-commerce uses Styled-Components for dynamic, reusable styling and Material-UI for responsive, pre-designed components, ensuring a modern and interactive user experience.",
     href: "https://e-commerce-app-mocha-mu.vercel.app/",
-    texture: "/textures/project/ecommerce-texture.mp4",
+    gitLink: "https://github.com/seifmostafa78/React-E-Commerce",
+    texture: "/textures/project/ecommerce-texture .png",
+    subTexture: "/textures/project/ecommerce-texture2.png",
     logo: "/assets/project-logo2.png",
     logoStyle: {
       backgroundColor: "#13202F",
@@ -119,12 +88,14 @@ export const myProjects = [
     ],
   },
   {
-    title: "Admin - DashBoard",
+    title: "Admin - Dashboard",
     desc: "A responsive Admin Dashboard built with React, featuring Light and Dark Mode for a personalized experience. It includes interactive components like charts and tables, optimized for all screen sizes, making it ideal for managing data and monitoring KPIs efficiently.",
     subdesc:
       "The project uses Sass for styling, Material UI for UI components, Recharts for data visualization, React Circular Progressbar for progress tracking, and @mui/x-data-grid for advanced tables.",
     href: "https://admin-dashboard-ivory-pi-78.vercel.app/",
-    texture: "/textures/project/dashboard-texture.mp4",
+    gitLink: "https://github.com/seifmostafa78/React-Admin-Dashboard",
+    texture: "/textures/project/dashboard-texture.png",
+    subTexture: "/textures/project/dashboard-texture2.png",
     logo: "/assets/dashboard.svg",
     logoStyle: {
       backgroundColor: "#2A1816",
@@ -156,7 +127,9 @@ export const myProjects = [
     subdesc:
       "The React Movie App uses Axios for efficient API calls to fetch movie data and Redux Toolkit for seamless state management, ensuring a fast and organized user experience.",
     href: "https://rtk-movie-app-mu.vercel.app/",
-    texture: "/textures/project/movie-texture.mp4",
+    gitLink: "https://github.com/seifmostafa78/React-RTK-Movie-App",
+    texture: "/textures/project/movie-texture.png",
+    subTexture: "/textures/project/movie-texture2.png",
     logo: "/assets/movie-clapperboard.svg",
     logoStyle: {
       backgroundColor: "#0E1F38",
@@ -188,7 +161,9 @@ export const myProjects = [
     subdesc:
       "Built with React and Tailwind CSS, the landing page delivers dynamic components, customizable styling, and a fully responsive user experience.",
     href: "https://fylo-gamma-umber.vercel.app/",
-    texture: "/textures/project/landing-texture.mp4",
+    gitLink: "https://github.com/seifmostafa78/React-Tailwind-Landing-Page",
+    texture: "/textures/project/landing-texture.png",
+    subTexture: "/textures/project/landing-texture2.png",
     logo: "/assets/project-logo5.png",
     logoStyle: {
       backgroundColor: "#1C1A43",
@@ -245,36 +220,3 @@ export const calculateSizes = (isSmall, isMobile, isTablet) => {
       : [-13, -13, -10],
   };
 };
-
-export const workExperiences = [
-  {
-    id: 1,
-    name: "Framer",
-    pos: "Lead Web Developer",
-    duration: "2022 - Present",
-    title:
-      "Framer serves as my go-to tool for creating interactive prototypes. I use it to bring designs to  life, allowing stakeholders to experience the user flow and interactions before development.",
-    icon: "/assets/framer.svg",
-    animation: "victory",
-  },
-  {
-    id: 2,
-    name: "Figma",
-    pos: "Web Developer",
-    duration: "2020 - 2022",
-    title:
-      "Figma is my collaborative design platform of choice. I utilize it to work seamlessly with team members and clients, facilitating real-time feedback and design iterations. Its cloud-based.",
-    icon: "/assets/figma.svg",
-    animation: "clapping",
-  },
-  {
-    id: 3,
-    name: "Notion",
-    pos: "Junior Web Developer",
-    duration: "2019 - 2020",
-    title:
-      "Notion helps me keep my projects organized. I use it for project management, task tracking, and as a central hub for documentation, ensuring that everything from design notes to.",
-    icon: "/assets/notion.svg",
-    animation: "salute",
-  },
-];

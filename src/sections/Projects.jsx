@@ -1,12 +1,7 @@
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
-import { Suspense, useState } from "react";
-import { Canvas } from "@react-three/fiber";
-import { Center, OrbitControls } from "@react-three/drei";
-
+import { useState } from "react";
 import { myProjects } from "../constants/index.js";
-import CanvasLoader from "../components/Loading.jsx";
-import DemoComputer from "../components/DemoComputer.jsx";
 
 const projectCount = myProjects.length;
 
@@ -82,6 +77,15 @@ const Projects = () => {
               target="_blank"
               rel="noreferrer"
             >
+              <a href={currentProject.gitLink} target="_blank">
+                <div className="social-icon cr-p">
+                  <img
+                    src="/assets/github.svg"
+                    alt="github"
+                    className="w-1/2 h-1/2"
+                  />
+                </div>
+              </a>
               <p>Check Live Site</p>
               <img src="/assets/arrow-up.png" alt="arrow" className="w-3 h-3" />
             </a>
@@ -108,19 +112,21 @@ const Projects = () => {
           </div>
         </div>
 
-        <div className="border border-black-300 bg-black-200 rounded-lg h-96 md:h-full">
-          <Canvas>
-            <ambientLight intensity={Math.PI} />
-            <directionalLight position={[10, 10, 5]} />
-            <Center>
-              <Suspense fallback={<CanvasLoader />}>
-                <group scale={2} position={[0, -3, 0]} rotation={[0, -0.1, 0]}>
-                  <DemoComputer texture={currentProject.texture} />
-                </group>
-              </Suspense>
-            </Center>
-            <OrbitControls maxPolarAngle={Math.PI / 2} enableZoom={false} />
-          </Canvas>
+        <div className="p-5 flex justify-evenly flex-col border border-black-300 bg-black-200 rounded-lg h-fit md:h-full">
+          <div>
+            <img
+              src={currentProject.texture}
+              alt={currentProject.title}
+              className="rounded-[5px] animatedText"
+            />
+          </div>
+          <div className="mt-5 hidden lg:block">
+            <img
+              src={currentProject.subTexture}
+              alt={currentProject.title}
+              className="rounded-[5px] animatedText"
+            />
+          </div>
         </div>
       </div>
     </section>
